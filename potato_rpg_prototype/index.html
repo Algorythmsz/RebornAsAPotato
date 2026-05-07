@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>전생했더니 쟈가이모였던 건에 대하여</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game">
+    <div id="title-screen">
+      <div class="title-vignette"></div>
+      <div class="title-content">
+        <button class="title-start" onclick="startGame()">게임 시작</button>
+      </div>
+      <p class="credit">made by winning park</p>
+    </div>
+    <div id="background"></div>
+    <div id="background-overlays"></div>
+
+    <img id="character" src="" alt="character" />
+
+    <div id="evidence-panel">
+      <strong>인벤토리</strong>
+      <div id="evidence-list">없음</div>
+    </div>
+
+    <div id="dialogue-box">
+      <div id="speaker"></div>
+      <div id="dialogue"></div>
+      <div id="choices"></div>
+    </div>
+
+    <div id="ending-screen">
+      <h2>THE END</h2>
+      <p>지우야, 너의 24번째 생일을 다시 한 번 진심으로 축하해</p>
+      <p>너가 어디에 있든 늘 응원해</p>
+      <p>그리고 많이 좋아해, 보고 싶어</p>
+      <div>
+        <button onclick="chooseEndingOption(true)">이 남자 만나기</button>
+        <button onclick="chooseEndingOption(false)">안만나기</button>
+      </div>
+      <p id="ending-choice-result"></p>
+      <p class="credit">made by winning park</p>
+      <button id="go-home-btn" onclick="goHome()" style="display:none;">홈화면으로 돌아가기</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
